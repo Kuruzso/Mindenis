@@ -269,17 +269,17 @@ namespace Ingatlanok
                                 consoleKey = mozgas(consoleKey);
                                 if (consoleKey == ConsoleKey.Enter && cursorTops[0] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti név: {0} új: {1} |: ".Length + name.Length + utasok[opcio].utas.name.Length, cursorTops[0]);
+                                    Console.SetCursorPosition("( ) Eredeti név:  új:  |: ".Length + name.Length + utasok[opcio].utas.name.Length, cursorTops[0]);
                                     name = Console.ReadLine();
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[1] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti cím: {0} új: {1} |: ".Length + cim.Length + utasok[opcio].utas.cim.Length, cursorTops[1]);
+                                    Console.SetCursorPosition("( ) Eredeti cím:  új:  |: ".Length + cim.Length + utasok[opcio].utas.cim.Length, cursorTops[1]);
                                     cim = Console.ReadLine();
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[2] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti telefonszám: {0} új: {1} |: ".Length + phoneNumber.Length + utasok[opcio].utas.phoneNumber.Length, cursorTops[2]);
+                                    Console.SetCursorPosition("( ) Eredeti telefonszám:  új:  |: ".Length + phoneNumber.Length + utasok[opcio].utas.phoneNumber.Length, cursorTops[2]);
                                     phoneNumber = Console.ReadLine();
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[3] == Console.CursorTop)
@@ -372,17 +372,17 @@ namespace Ingatlanok
                                 consoleKey = mozgas(consoleKey);
                                 if (consoleKey == ConsoleKey.Enter && cursorTops[0] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti uticel: {0} új: {1} |: ".Length + uticel.Length, cursorTops[0]);
+                                    Console.SetCursorPosition("( ) Eredeti uticel:  új:  |: ".Length + utak[opcio].ut.uticel.Length + uticel.Length, cursorTops[0]);
                                     uticel = Console.ReadLine();
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[1] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti ar: {0} új: {1} |: ".Length + ar.ToString().Length, cursorTops[1]);
+                                    Console.SetCursorPosition("( ) Eredeti ar:  új:  |: ".Length+ utak[opcio].ut.ar.ToString().Length + ar.ToString().Length, cursorTops[1]);
                                     ar = int.Parse(Console.ReadLine());
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[2] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eredeti maximális létszám: {0} új: {1} |: ".Length + maxletszam.ToString().Length, cursorTops[2]);
+                                    Console.SetCursorPosition("( ) Eredeti maximális létszám:  új:  |: ".Length + utak[opcio].ut.maxLetszam.ToString().Length + maxletszam.ToString().Length, cursorTops[2]);
                                     maxletszam = int.Parse(Console.ReadLine());
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[3] == Console.CursorTop)
@@ -493,7 +493,7 @@ namespace Ingatlanok
                                 consoleKey = mozgas(consoleKey);
                                 if (consoleKey == ConsoleKey.Enter && cursorTops[0] == Console.CursorTop)
                                 {
-                                    Console.SetCursorPosition("( ) Eddigi előleg: {0} további fizetés: {1} |: ".Length + foglalasok[van].foglalas.eloleg.ToString().Length + eloleg.ToString().Length, cursorTops[0]);
+                                    Console.SetCursorPosition("( ) Eddigi előleg:  további fizetés:  |: ".Length + foglalasok[van].foglalas.eloleg.ToString().Length + eloleg.ToString().Length, cursorTops[0]);
                                     eloleg = int.Parse(Console.ReadLine());
                                 }
                                 else if (consoleKey == ConsoleKey.Enter && cursorTops[1] == Console.CursorTop)
@@ -547,7 +547,7 @@ namespace Ingatlanok
                                     consoleKey = mozgas(consoleKey);
                                     if (consoleKey == ConsoleKey.Enter && cursorTops[0] == Console.CursorTop)
                                     {
-                                        Console.SetCursorPosition("( ) Eddigi előleg: {0} további fizetés: {1} |: ".Length + foglalasok[van].foglalas.eloleg.ToString().Length + eloleg.ToString().Length, cursorTops[0]);
+                                        Console.SetCursorPosition("( ) Eddigi előleg:  további fizetés:  |: ".Length + foglalasok[van].foglalas.eloleg.ToString().Length + eloleg.ToString().Length, cursorTops[0]);
                                         eloleg = int.Parse(Console.ReadLine());
                                     }
                                     else if (consoleKey == ConsoleKey.Enter && cursorTops[1] == Console.CursorTop)
